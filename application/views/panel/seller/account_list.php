@@ -2,7 +2,7 @@
 <div id="page-wrapper">
 	<div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">SSH User List
+            <h1 class="page-header"><u><FONT COLOR="#ff0000">Premium User List</u></font color>
             </h1>
         </div>
     </div>
@@ -10,7 +10,7 @@
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <i class="fa fa-group fa-fw"></i> Account List
+                    <i class="fa fa-group fa-fw"></i> <b><u>Account List</u></b>
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">

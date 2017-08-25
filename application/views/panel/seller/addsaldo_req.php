@@ -2,17 +2,17 @@
 <div id="page-wrapper">
 	 <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Tambah Saldo (Via-Rekening)</h1>
-            <div class="well">Saldo Anda : <B><?php if (isset($user->saldo)) {echo $user->saldo; }?></B></div>
+            <h1 class="page-header">Tambah Credit (Via-Transfer)</h1>
+            <div class="well">Credit Anda RM : <B><?php if (isset($user->saldo)) {echo $user->saldo; }?></B></div>
         </div>
     </div>
     <div class="row">
 		  <div class="col-sm-6">
-			   <p class="text-muted">Catatan: jika sudah membayar, silakan klik konfirmasi maka saldo anda akan bertambah otomatis setelah di cek admin.</p>
-			   <p class="text-info">Silakan kirim ke salah satu rekening berikut: </p>
+			   <p class="text-muted">Catatan: Jika Sudah Membuat Payment , Sila Tunggu Sampai Admin Sahkan.</p>
+			   <p class="text-info">Silakan kirim ke salah satu Account Bank berikut: </p>
 			   <?php foreach ($this->user_model->view_asset() as $row): ?>
 					<?php if(!empty($row['rekening'])): ?>
-						<p class="text-default" align="center"> <?= $row['pemilik']?><br> No Req: <?= $row['rekening']?> <br>  <?= $row['bank']?></p>
+						<p class="text-default" align="center"> <?= $row['pemilik']?><br> No.Account: <?= $row['rekening']?> <br>  <?= $row['bank']?></p>
 					<?php endif; ?>					
 			   <?php endforeach; ?>
 		  </div>
@@ -34,14 +34,14 @@
 					<?php endif;?>
 			   <?= form_open() ?>
 					<div class="form-group">
-						<label for="sender">Rekening pengirim</label>
-						<input type="text" name="sender" class="form-control" id="sender" placeholder="Masukan no rek Anda"/>
+						<label for="sender">Account Pengirim</label>
+						<input type="text" name="sender" class="form-control" id="sender" placeholder="No. Account Anda"/>
 						<small class="text-muted">Untuk bukti telah membayar</small>
 					</div>
 					<div class="form-group">
 						<label for="username">Atas Nama</label>
-						<input type="text" name="username" class="form-control" id="username" placeholder="Masukan pemilik rekening"/>
-						<small class="text-muted">Nama di rekening Anda</small>
+						<input type="text" name="username" class="form-control" id="username" placeholder="Owner Bank"/>
+						<small class="text-muted">Nama Owner Bank</small>
 					</div>
 					<div class="form-group">
 						<label for="rekening">Kirim ke</label>
@@ -54,12 +54,12 @@
 						</select>
 					</div>
 					<div class="form-group">
-						<label for="hp">Jumlah deposit</label>
-						<input type="number" name="jumlah" class="form-control" id="jumlah" value="30000"/>
-						<small class="text-muted">Jumlah deposit minimal 30000</small>
+						<label for="hp">Jumlah deposit RM</label>
+						<input type="number" name="jumlah" class="form-control" id="jumlah" value="20"/>
+						<small class="text-muted">Jumlah deposit minimal RM20</small>
 					</div>
 					<div class="form-group">
-						<input type="submit" class="btn btn-primary form-control" value="Konfirmasi"/>
+						<input type="submit" class="btn btn-primary form-control" value="Confirm"/>
 					</div>
 			   </form>
             </div>

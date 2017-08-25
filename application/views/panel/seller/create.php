@@ -2,12 +2,12 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Create SSH Account</h1>
+            <h1 class="page-header"><u>Create Account</u></h1>
         </div>
     </div>
     <div class="row">
        <div class="col-xs-6 col-md-5 col-md-4 col-lg-3">
-            <div class="well">Saldo : <B><?php if (isset($user->saldo)) {echo $user->saldo; }?></B></div>
+            <div class="well">Credit RM : <B><?php if (isset($user->saldo)) {echo $user->saldo; }?></B></div>
         </div>
     </div>
     <div class="row">
