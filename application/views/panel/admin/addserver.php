@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">
-               Tambah Server
+ <FONT COLOR="#FF0000"><u>ADD SERVER</u></COLOR>
             </h1>
         </div>
     </div>
@@ -13,16 +13,16 @@
         <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <i class="fa fa-gear fa-fw"></i> Server Settings
+                    <i class="fa fa-gear fa-fw"></i> <b><u>Server Settings</u></b>
                 </div>
                 <div class="panel-body">
                     <form action="<?= base_url('panel/administrator/'.$_SESSION['username'].'/'.'addserver') ?>" method="POST">
                         <div class="form-group">
-                            <label>Nama Server</label>
+                            <label><b>Nama Server</b></label>
                             <input class="form-control" placeholder="Server Demo 1" name="ServerName" type="text" required>
                         </div>
                         <div class="form-group">
-                            <label>Location</label>
+                            <label><b>Location</b></label>
                             <select class="form-control" name="Location">
 								<?php foreach($this->user_model->get_country() as $row):?>
 								<option value="<?= $row['Country'] ?>"><?= $row['Country'] ?></option>
@@ -30,22 +30,22 @@
 							</select>
                         </div>
                         <div class="form-group">
-                            <label>IP / Host</label>
+                            <label><b>Host SerVer</b></label>
                             <input class="form-control" placeholder="192.168.1.1 atau www.example-server.com" name="HostName" type="text" required>
                         </div>
                         <div class="form-group">
-                            <label>Harga Sewa / Bulan</label>
+                            <label><b>Price Per Month</b></label>
                             <div class="input-group">
-                                <span class="input-group-addon">Rp. </span>
-                                <input class="form-control" placeholder="10000" name="Price" type="number" step="100" required>
+                                <span class="input-group-addon"><b>RM</b> </span>
+                                <input class="form-control" placeholder="10" name="Price" type="number" step="1" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Root Password</label>
+                            <label><b>Root Password</b></label>
                             <input class="form-control" placeholder="r0oT_p4s5wo0rD" name="RootPasswd" type="text">
                         </div>
-                        <input type="submit" class="btn btn-primary" value="Simpan">
-                        <a href="<?= base_url('panel/administrator/'.$_SESSION['username'].'/'.'server') ?>" class="btn btn-default">Kembali</a>
+                        <input type="submit" class="btn btn-primary" value="Save">
+                        <a href="<?= base_url('panel/administrator/'.$_SESSION['username'].'/'.'server') ?>" class="btn btn-default">Cancel</a>
                     </form>
                 </div>
             </div>

@@ -22,22 +22,22 @@
 							<div class="panel-title"><b><?= $row['ServerName']?></b></div>
 							<span clas="pull-right">
 							<?php if ($row['Status']): ?>
-								<a class="btn btn-default btn-sm pull-right" href="<?= base_url('panel/administrator/edit/'.str_replace(' ','-',$row['ServerName']).'/'.$row['Id'].'/lock' ) ?>"><i class="fa fa-unlock"></i> lock</a>
+								<a class="btn btn-default btn-sm pull-right" href="<?= base_url('panel/administrator/edit/'.str_replace(' ','-',$row['ServerName']).'/'.$row['Id'].'/lock' ) ?>"><i class="fa fa-unlock"></i> <b>LOCK</b></a>
 								<?php else: ?>
-								<a class="btn btn-default btn-sm pull-right" href="<?= base_url('panel/administrator/edit/'.str_replace(' ','-',$row['ServerName']).'/'.$row['Id'].'/unlock' ) ?>"><i class="fa fa-lock"></i>  unlock</a>
+								<a class="btn btn-default btn-sm pull-right" href="<?= base_url('panel/administrator/edit/'.str_replace(' ','-',$row['ServerName']).'/'.$row['Id'].'/unlock' ) ?>"><i class="fa fa-lock"></i> <b>UNLOCK</b></a>
 								<?php endif; ?>
 							</span>
                     </div>
                     <div class="panel-body">
                     <table class="table table-condensed">
                         <tr>
-                            <td>Lokasi</td><td><?= $row['Location']?></td>
+                            <td><b>LOCATION</b></td><td><?= $row['Location']?></td>
                         </tr>
                         <tr>
-                            <td>Host</td><td><?= $row['HostName']?></td>
+                            <td><b>HOST</b></td><td><?= $row['HostName']?></td>
                         </tr>
                         <tr>
-                            <td>Harga</td><td><?= $row['Price']?></td>
+                            <td><b>Price/Month</b></td><td><?= $row['Price']?></td>
                         </tr>
                     </table>  
                     </div>
@@ -45,7 +45,7 @@
                     <div class="panel-footer text-center">
                         <a href="<?= base_url('panel/administrator/edit/'.str_replace(' ','-',$row['ServerName']).'/'.$row['Id'])?>" class="btn btn-primary btn-sm"><i class="fa fa-edit fa-fw"></i> Edit</a>
                         <a href="<?= base_url('admin/cekuser/'.$row['Id']) ?>" class="btn btn-default btn-sm"><i class="fa fa-group fa-fw"></i> Check User</a>
-                        <a href="<?= base_url('panel/administrator/edit/'.str_replace(' ','-',$row['ServerName']).'/'.$row['Id'].'/del' ) ?>" class="btn btn-danger btn-sm hapus pull-right"> Hapus</a>
+                        <a href="<?= base_url('panel/administrator/edit/'.str_replace(' ','-',$row['ServerName']).'/'.$row['Id'].'/del' ) ?>" class="btn btn-danger btn-sm hapus pull-right"> Delete</a>
                     </div>
                 </div>
             </div>

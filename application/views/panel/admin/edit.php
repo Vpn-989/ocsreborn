@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 	<div id="page-wrapper">
-			<div class="row"><div class="col-lg-12"><h1 class="page-header">Edit Server</h1></div></div>
+			<div class="row"><div class="col-lg-12"><h1 class="page-header"><u>Edit Server</u></h1></div></div>
 				<div class="row"><div class="col-lg-12">
 					
 					<div class="panel panel-default">
@@ -26,7 +26,7 @@
 									<p class="help-block">Pilih lokasi yang sudah disediakan</p>
 								</div>
 								<div class="form-group">
-									<label for="email">Harga</label>
+									<label for="email">Price</label>
 									<input type="number" class="form-control" id="email" name="Price" value="<?= $server->Price ?>">
 									<p class="help-block">Jika harga diset 0 server akan tampil di halaman utama dg status free, tapi jika diset harga server akan muncul di menu reseller</p>
 								</div>
