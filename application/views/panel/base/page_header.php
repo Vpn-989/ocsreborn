@@ -72,11 +72,11 @@
                                 </a>
                             </li>
 						<li><a href="<?= base_url('panel/'.$_SESSION['username'].'/setting')?>"><i class="fa fa-key"></i> Sandi</a></li>
-							<li><a href="<?= base_url('admin/asset')?>"><i class="fa fa-phone"></i> No.Telp</a></li>
-							<li><a href="<?= base_url('admin/asset_req')?>"><i class="fa fa-credit-card"></i> No.Req</a></li>
+							<li><a href="<?= base_url('admin/asset')?>"><i class="fa fa-paypal"></i> Acc.Paypal</a></li>
+							<li><a href="<?= base_url('admin/asset_req')?>"><i class="fa fa-cc-visa"></i> Acc Bank</a></li>
                         <?php else: ?>
                          <li>
-                              <a href="<?= base_url('panel/reseller/'.$_SESSION['username'].'/server') ?>"><i class="fa fa-shopping-cart fa-fw"></i> Buy SSH Account</a>
+                              <a href="<?= base_url('panel/reseller/'.$_SESSION['username'].'/server') ?>"><i class="fa fa-shopping-cart fa-fw"></i> Buy Premium Account</a>
                         </li>
                         <li>
                               <a href="<?= base_url('panel/reseller/cek_account/'.$_SESSION['username']) ?>"><i class="fa fa-users"></i> Cek account</a>
