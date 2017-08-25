@@ -11,9 +11,9 @@
 						<div class="alert alert-danger" role="alert"><?= $error ?></div>
 					</div>
 				<?php endif; ?>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><i class="fa fa-sign-in fa-fw"></i> Silahkan Login Dahulu</h3>
+                <div class="panel panel-default"><div style="text-align:center;"><a href="http://tinypic.com?ref=16gcq6c" target="_blank"><img src="http://i66.tinypic.com/16gcq6c.gif" border="0" alt="Image and video hosting by TinyPic"></a>
+                    <div class="panel-heading"><marquee behavior="alternate"><a href="http://tinypic.com?ref=9usmty" target="_blank"><img src="http://vpn989.com/989/ocs.png" widht="150" height="200"></a></marquee>
+                        <h3 class="panel-title"><i class="fa fa-sign-in fa-fw"></i> <FONT COLOR="#ff0000"><b><u><i>Please Login to OcsPanel Reborn</i></u></b></FONT COLOR</h3>
                     </div>
                     <div class="panel-body">
                         <?= form_open() ?>
@@ -21,13 +21,13 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                                        <input class="form-control" placeholder="Username" name="username" type="text" autofocus required>
+                                        <input class="form-control" placeholder="UserNaMe" name="username" type="text" autofocus required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-                                        <input class="form-control" placeholder="Password" name="password" type="password" required>
+                                        <input class="form-control" placeholder="PassWord" name="password" type="password" required>
                                     </div>
                                 </div>
                                 <input type="submit" class="btn btn-lg btn-success btn-block" value="Login"></input>
@@ -36,7 +36,7 @@
                     </div>
                  
                 </div>
-                <p>Belum punya akun Seller klik? <a href="<?= base_url('panel/register') ?>">Daftar</a></p>
+                <marquee><p><b><i>ingin Jadi Reseller ?</marquee></i></b> <a href="<?= base_url('panel/register') ?>"><i>Register Now</i></a></p>
             </div>
           
         </div>
